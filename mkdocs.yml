@@ -1,0 +1,7 @@
+site_name: U.S. Cellular How To
+
+pages:
+  - Introduction: index.md
+  - Catalog of How Tos:
+    - Version Control:
+      - Clone a Repository: version_control/clone-repo.md
