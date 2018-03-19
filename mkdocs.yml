@@ -3,5 +3,8 @@ site_name: U.S. Cellular How To
 pages:
   - Introduction: index.md
   - Catalog of How Tos:
+    - USCC Engineering Organization Access: uscc-organization.md
+    - Generate SSH Key pair: generate-ssh-key.md
     - Version Control:
       - Clone a Repository: version_control/clone-repo.md
+  - Automation Summit: auto-summit.md
