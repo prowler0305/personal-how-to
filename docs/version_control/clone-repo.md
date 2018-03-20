@@ -14,4 +14,4 @@
 
     ![check from version control 2](/images/checkout_from_version_control_2.png)
 
-Now you have the repository cloned to your local machine in which you can make your changes or start developing your code. When you're ready to commit your changes or newly added code see our How To on [**Committing changes**](
+Now you have the repository cloned to your local machine in which you can make your changes or start developing your code. When you're ready to commit your changes or newly added code see our How To on [**Committing changes**](commit.md)

@@ -7,4 +7,5 @@ pages:
     - Generate SSH Key pair: generate-ssh-key.md
     - Version Control:
       - Clone a Repository: version_control/clone-repo.md
+      - Commit Changes: version_control/commit.md
   - Automation Summit: auto-summit.md
