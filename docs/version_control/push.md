@@ -5,8 +5,8 @@ In an IDE like IntelliJ you can accomplish by doing the following:
  
  1. On the main toolbar open the "VCS" menu and expand the "Git" and click "Push".
  
-    ![VCS..Git..Push](/images/vcs_git_push.png)
+    [![VCS..Git..Push](/images/vcs_git_push.png)](/images/vcs_git_push.png)
     
  1. This brings up the "Commit Changes" dialog panel. By default specifies the remote origin master branch will be the receiver of the pushed commits.
  <a id="push_dialog"></a> 
-        ![Push Commits dialog](/images/push_commits.png)
+        [![Push Commits dialog](/images/push_commits.png)](/images/push_commits.png)
