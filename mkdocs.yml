@@ -8,4 +8,5 @@ pages:
     - Version Control:
       - Clone a Repository: version_control/clone-repo.md
       - Commit Changes: version_control/commit.md
+      - Push Commits: version_control/push.md
   - Automation Summit: auto-summit.md
