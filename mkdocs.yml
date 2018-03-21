@@ -6,6 +6,7 @@ pages:
     - USCC Engineering Organization Access: uscc-organization.md
     - Generate SSH Key pair: generate-ssh-key.md
     - Version Control:
+      - Create a Repository: version_control/create-repo.md
       - Clone a Repository: version_control/clone-repo.md
       - Commit Changes: version_control/commit.md
       - Push Commits: version_control/push.md
