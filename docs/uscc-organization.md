@@ -1,7 +1,7 @@
 # USCC Engineering Github Organization
 Under our GitHub Enterprise account we have a U.S. Cellular Engineering organization. This organization serves many purposes, but most importantly the ability to house all of our Automations being developed for the business in an environment that gives us permission control. 
 
-Minimally this allows us to bring in outside consultants and give them access to our GitHub Enterprise account for any development they do without giving them full access to any repositories that could contain sensitive information or code. To facilitate this we need to require from everyone to create work related repositories under our organization. 
+Minimally this allows us to bring in outside consultants and give them access to our GitHub Enterprise account for any development they do without giving them full access to any repositories that could contain sensitive information or code. To facilitate this we need to require from everyone to [create work related repositories under our organization](/version_control/create-repo.md). 
 
 Below are instructions on to request access as well as some useful links to documentation within Github about Organizations.
 

@@ -8,6 +8,7 @@ pages:
     - Version Control:
       - Create a Repository: version_control/create-repo.md
       - Clone a Repository: version_control/clone-repo.md
+      - Create Branches: version_control/create-branch.md
       - Commit Changes: version_control/commit.md
       - Push Commits: version_control/push.md
   - Automation Summit: auto-summit.md
