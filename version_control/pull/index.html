@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Create a Repository - U.S. Cellular How To</title>
+        <title>Pull/Fetch - U.S. Cellular How To</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -64,8 +64,8 @@
     <a href="#">Version Control</a>
     <ul class="dropdown-menu">
             
-<li class="active">
-    <a href="./">Create a Repository</a>
+<li >
+    <a href="../create-repo/">Create a Repository</a>
 </li>
             
 <li >
@@ -84,8 +84,8 @@
     <a href="../push/">Push Commits</a>
 </li>
             
-<li >
-    <a href="../pull/">Pull/Fetch</a>
+<li class="active">
+    <a href="./">Pull/Fetch</a>
 </li>
     </ul>
   </li>
@@ -103,12 +103,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../../generate-ssh-key/">
+                        <a rel="next" href="../push/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../clone-repo/">
+                        <a rel="prev" href="../../auto-summit/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -120,23 +120,23 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#how-to-create-and-initialize-a-repository-via-github">How to create and initialize a repository via GitHub</a></li>
+        <li class="main active"><a href="#pull-changes-to-update-local-repository">Pull changes to update local repository</a></li>
+            <li><a href="#how-to-do-a-pull-via-intellij">How to do a PULL via IntelliJ</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="how-to-create-and-initialize-a-repository-via-github">How to create and initialize a repository via GitHub</h1>
+<h1 id="pull-changes-to-update-local-repository">Pull changes to update local repository</h1>
+<p>To update your local repository with changes that are in the remote repository you need to perform a <strong>fetch</strong> of the changes followed by a <strong>merge</strong> to combine the remote changes with any changes that exist in your working directory. Or you can easily perform a <strong>pull</strong> which is the combination of the two commands.</p>
+<h2 id="how-to-do-a-pull-via-intellij">How to do a PULL via IntelliJ</h2>
 <ol>
 <li>
-<p>Login to GitHub and locate the <strong>New Repository</strong> button on the dashboard page.
-    <a href="../../images/new_repo.png"><img alt="new repo button" src="../../images/new_repo.png" /></a></p>
+<p>Go to <strong>VCS</strong> -&gt; <strong>Git</strong> -&gt; <strong>Pull</strong>.</p>
+<p><img alt="git pull" src="../../images/git_pull.png" /></p>
 </li>
 <li>
-<p>Use the <span style="color:red"> <strong>Owner drop down box</strong></span> to specify if the repository should be owned by the user or by the organization.</p>
-<ul>
-<li>Fill in the information including name, description, and check the Initialize checkbox and click the <strong>Create Repository</strong> button.</li>
-</ul>
-<p><a href="../../images/create_repo.png"><img alt="create repo" src="../../images/create_repo.png" /></a></p>
+<p>This brings up the "Pull Changes" dialog panel. Verify that the <strong>Git Root</strong> directory path is correct and the <strong>Current Branch</strong> indicates the local branch you want to merge any changes in the remote repository with. Select the <strong>Remote</strong> you want to pull from. Check the <strong>Branches to merge</strong> and click <strong>Pull</strong></p>
+<p><img alt="pull changes dialog" src="../../images/pull_changes_dialog.png" /></p>
 </li>
 </ol></div>
         </div>

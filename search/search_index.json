@@ -52,7 +52,7 @@
         },
         {
             "location": "/version_control/create-branch/",
-            "text": "How to create branches within a repository\n\n\nCreating branches within a repository has many uses from allowing multiple developers to work on different parts of the code at the same time to being a part of a deployment strategy. For more information about the usefulness of branches please see the \nWorkflow Strategy\n page. This page will show the different ways you can create a branch in a repository.\n\n\nVia GitHub\n\n\nVia IntelliJ IDE\n\n\n\n\n\n\nGo to \nVCS\n -> \nGit\n -> \nBranches..\n\n    \n\n\n\n\n\n\nThe \nGit Branches\n pop-up menu will be displayed and click the \n+\nNew Branch\n option.\n    \n\n\n\n\n\n\nIn the \nCreate New Branch\n dialog name your branch and optionally check the box next to \nCheckout branch\n. (see our How to on \nCheckout Branch\n to learn more about checking out branches)\n    ![create new branch dialog](/images/create_ne  w_branch_dialog.png)",
+            "text": "How to create branches within a repository\n\n\nCreating branches within a repository has many uses from allowing multiple developers to work on different parts of the code at the same time to being a part of a deployment strategy. For more information about the usefulness of branches please see the \nWorkflow Strategy\n page. This page will show the different ways you can create a branch in a repository.\n\n\nVia GitHub\n\n\n\n\n\n\nOn the \nCode\n tab of the repository click the \nBranch: master\n drop down. Here you can see what branches already exist and create new ones. Just simply type the name of the new branch and click \nCreate branch: name you entered from 'master'\n. To update your local repository perform a \nGit Fetch\n.\n\n\n\n\n\n\n\n\nVia IntelliJ IDE\n\n\n\n\n\n\nGo to \nVCS\n -> \nGit\n -> \nBranches..\n\n\n\n\n\n\n\n\nThe \nGit Branches\n pop-up menu will be displayed and click the \n+\nNew Branch\n option.\n\n\n\n\n\n\n\n\nIn the \nCreate New Branch\n dialog name your branch and optionally check the box next to \nCheckout branch\n. (see our How to on \nCheckout Branch\n to learn more about checking out branches)",
             "title": "Create Branches"
         },
         {
@@ -62,12 +62,12 @@
         },
         {
             "location": "/version_control/create-branch/#via-github",
-            "text": "",
+            "text": "On the  Code  tab of the repository click the  Branch: master  drop down. Here you can see what branches already exist and create new ones. Just simply type the name of the new branch and click  Create branch: name you entered from 'master' . To update your local repository perform a  Git Fetch .",
             "title": "Via GitHub"
         },
         {
             "location": "/version_control/create-branch/#via-intellij-ide",
-            "text": "Go to  VCS  ->  Git  ->  Branches.. \n        The  Git Branches  pop-up menu will be displayed and click the  + New Branch  option.\n        In the  Create New Branch  dialog name your branch and optionally check the box next to  Checkout branch . (see our How to on  Checkout Branch  to learn more about checking out branches)\n    ![create new branch dialog](/images/create_ne  w_branch_dialog.png)",
+            "text": "Go to  VCS  ->  Git  ->  Branches..     The  Git Branches  pop-up menu will be displayed and click the  + New Branch  option.     In the  Create New Branch  dialog name your branch and optionally check the box next to  Checkout branch . (see our How to on  Checkout Branch  to learn more about checking out branches)",
             "title": "Via IntelliJ IDE"
         },
         {
@@ -89,6 +89,21 @@
             "location": "/version_control/push/#push-changes-to-a-remote-repository",
             "text": "Pushing your commits is to simply take all your committed snapshots and copy them to a repository hosted on a remote server. This has a lot of benefits including the simple fact that the remote server keeps a backup of your repository that can be used to recover or access your files from anywhere.  In an IDE like IntelliJ you can accomplish by doing the following:    On the main toolbar open the \"VCS\" menu and expand the \"Git\" and click \"Push\".     This brings up the \"Commit Changes\" dialog panel. By default specifies the remote origin master branch will be the receiver of the pushed commits.",
             "title": "Push changes to a Remote Repository"
+        },
+        {
+            "location": "/version_control/pull/",
+            "text": "Pull changes to update local repository\n\n\nTo update your local repository with changes that are in the remote repository you need to perform a \nfetch\n of the changes followed by a \nmerge\n to combine the remote changes with any changes that exist in your working directory. Or you can easily perform a \npull\n which is the combination of the two commands.\n\n\nHow to do a PULL via IntelliJ\n\n\n\n\n\n\nGo to \nVCS\n -> \nGit\n -> \nPull\n.\n\n\n\n\n\n\n\n\nThis brings up the \"Pull Changes\" dialog panel. Verify that the \nGit Root\n directory path is correct and the \nCurrent Branch\n indicates the local branch you want to merge any changes in the remote repository with. Select the \nRemote\n you want to pull from. Check the \nBranches to merge\n and click \nPull",
+            "title": "Pull/Fetch"
+        },
+        {
+            "location": "/version_control/pull/#pull-changes-to-update-local-repository",
+            "text": "To update your local repository with changes that are in the remote repository you need to perform a  fetch  of the changes followed by a  merge  to combine the remote changes with any changes that exist in your working directory. Or you can easily perform a  pull  which is the combination of the two commands.",
+            "title": "Pull changes to update local repository"
+        },
+        {
+            "location": "/version_control/pull/#how-to-do-a-pull-via-intellij",
+            "text": "Go to  VCS  ->  Git  ->  Pull .     This brings up the \"Pull Changes\" dialog panel. Verify that the  Git Root  directory path is correct and the  Current Branch  indicates the local branch you want to merge any changes in the remote repository with. Select the  Remote  you want to pull from. Check the  Branches to merge  and click  Pull",
+            "title": "How to do a PULL via IntelliJ"
         },
         {
             "location": "/auto-summit/",
