@@ -11,4 +11,5 @@ pages:
       - Create Branches: version_control/create-branch.md
       - Commit Changes: version_control/commit.md
       - Push Commits: version_control/push.md
+      - Pull/Fetch: version_control/pull_fetch.md
   - Automation Summit: auto-summit.md
