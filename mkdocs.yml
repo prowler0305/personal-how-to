@@ -13,4 +13,6 @@ pages:
       - Push Commits: version_control/push.md
       - Pull/Fetch: version_control/pull.md
       - Fetch a Remote created Branch: version_control/fetch_branches.md
+      - Checkout Branch: version_control/checkout.md
+      - Stash/Shelve changes: version_control/stashing.md
   - Automation Summit: auto-summit.md
