@@ -7,3 +7,5 @@
     * Fill in the information including name, description, and check the Initialize checkbox and click the **Create Repository** button.
 
     [![create repo](/images/create_repo.png)](/images/create_repo.png)
+    
+Now that you have a repository created see the [How To clone a repository](clone-repo.md)
