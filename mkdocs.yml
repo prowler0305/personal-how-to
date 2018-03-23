@@ -15,4 +15,5 @@ pages:
       - Fetch a Remote created Branch: version_control/fetch_branches.md
       - Checkout Branch: version_control/checkout.md
       - Stash/Shelve changes: version_control/stashing.md
+  - Worflows: workflow-strategy.md
   - Automation Summit: auto-summit.md
