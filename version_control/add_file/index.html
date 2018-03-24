@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Clone a Repository - U.S. Cellular How To</title>
+        <title>Add a File to Git - U.S. Cellular How To</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -68,16 +68,16 @@
     <a href="../daytoday/">Day to Day Git</a>
 </li>
             
-<li >
-    <a href="../add_file/">Add a File to Git</a>
+<li class="active">
+    <a href="./">Add a File to Git</a>
 </li>
             
 <li >
     <a href="../create-repo/">Create a Repository</a>
 </li>
             
-<li class="active">
-    <a href="./">Clone a Repository</a>
+<li >
+    <a href="../clone-repo/">Clone a Repository</a>
 </li>
             
 <li >
@@ -126,12 +126,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../create-repo/">
+                        <a rel="next" href="../daytoday/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../create-branch/">
+                        <a rel="prev" href="../create-repo/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -143,30 +143,15 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#how-to-clone-a-repository-locally-via-intellij">How to clone a repository locally via IntelliJ</a></li>
+        <li class="main active"><a href="#how-to-add-a-file-to-git">How to Add a file to Git</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="how-to-clone-a-repository-locally-via-intellij">How to clone a repository locally via IntelliJ</h1>
-<ol>
-<li>
-<p>Our GitHub Enterprise account only allows cloning using the SSH url. So inorder to clone any repository you will need to setup an SSH key pair trust between GitHub and your local machine. You can follow the instructions here to <a href="../../generate-ssh-key/">generate an ssh key pair</a></p>
-</li>
-<li>
-<p>On the repository main page click the "Clone or download" button and be sure to change it to "Use SSH" instead of "Use HTTPS" and copy the displayed git SSH URL to your clipboar.</p>
-<p><a href="../../images/clone_repo.png"><img alt="clone or download" src="../../images/clone_repo.png" /></a></p>
-</li>
-<li>
-<p>Open IntelliJ and select "Check out from Version Control" and select "Git" from the drop down menu</p>
-<p><a href="../../images/checkout_from_version_control.png"><img alt="check out from version control" src="../../images/checkout_from_version_control.png" /></a></p>
-</li>
-<li>
-<p>Fill out the "Clone Repository" popup screen. The SSH URL you copied to your clipboard goes in the Git Repository URL field. Select the directory you wish to have all your repository projects under, or accept the default. Also give the cloned repository a "Directory Name" or accept the default. You can click the "Test" button to test the connection. When your ready click "Clone" and go through any other prompts.</p>
-<p><a href="../../images/checkout_from_version_control_2.png"><img alt="check from version control 2" src="../../images/checkout_from_version_control_2.png" /></a></p>
-</li>
-</ol>
-<p>Now you have the repository cloned to your local machine in which you can make your changes or start developing your code. When you're ready to commit your changes or newly added code see  the <a href="../commit/">How To on Committing changes</a></p></div>
+<h1 id="how-to-add-a-file-to-git">How to Add a file to Git</h1>
+<p>In order to update git to know about a file a <strong>git add</strong> command is done to add the file to your local repository and stage it for commit.</p>
+<p>In IntelliJ this is simplified that when you create a new file IntelliJ will provide you a prompt to decide to add the file to Git. Simply choose <strong>Yes</strong> or <strong>No</strong></p>
+<p><a href="../../images/add_file.png"><img alt="add a file" src="../../images/add_file.png" /></a></p></div>
         </div>
 
         <footer class="col-md-12">

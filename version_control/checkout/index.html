@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../../img/favicon.ico">
-        <title>Clone a Repository - U.S. Cellular How To</title>
+        <title>Checkout Branch - U.S. Cellular How To</title>
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.5.0.css" rel="stylesheet">
         <link href="../../css/base.css" rel="stylesheet">
@@ -76,8 +76,8 @@
     <a href="../create-repo/">Create a Repository</a>
 </li>
             
-<li class="active">
-    <a href="./">Clone a Repository</a>
+<li >
+    <a href="../clone-repo/">Clone a Repository</a>
 </li>
             
 <li >
@@ -100,8 +100,8 @@
     <a href="../fetch_branches/">Fetch a Remote created Branch</a>
 </li>
             
-<li >
-    <a href="../checkout/">Checkout Branch</a>
+<li class="active">
+    <a href="./">Checkout Branch</a>
 </li>
             
 <li >
@@ -126,12 +126,12 @@
                     </a>
                 </li>
                     <li >
-                        <a rel="next" href="../create-repo/">
+                        <a rel="next" href="../fetch_branches/">
                             <i class="fa fa-arrow-left"></i> Previous
                         </a>
                     </li>
                     <li >
-                        <a rel="prev" href="../create-branch/">
+                        <a rel="prev" href="../stashing/">
                             Next <i class="fa fa-arrow-right"></i>
                         </a>
                     </li>
@@ -143,30 +143,53 @@
         <div class="container">
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
-        <li class="main active"><a href="#how-to-clone-a-repository-locally-via-intellij">How to clone a repository locally via IntelliJ</a></li>
+        <li class="main active"><a href="#how-to-checkout-branches">How to checkout branches</a></li>
+            <li><a href="#checkout-a-remote-branch-as-a-new-local-branch">Checkout a remote branch as a new local branch</a></li>
+            <li><a href="#switch-between-local-branches">Switch between local branches</a></li>
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="how-to-clone-a-repository-locally-via-intellij">How to clone a repository locally via IntelliJ</h1>
+<h1 id="how-to-checkout-branches">How to checkout branches</h1>
+<p>When multiple branches exist in a repository in order to work within a certain branch your local working trees files and index needs to be switched to that branch. This is accomplished by doing a <strong>checkout</strong>.</p>
+<p>Most of the time before you do a checkout you will want to makes sure you have a clean working directory. You can do this by either committing changes to the current branch before doing the checkout or <a href="../stashing/">stash/shelve the changes</a>.</p>
+<p>There are two kinds of checkouts:</p>
+<ul>
+<li><a href="#checkout-a-remote-branch-as-a-new-local-branch">Checkout a remote branch as a new local branch</a></li>
+<li><a href="#switch-between-local-branches">Switching between local branches via a checkout</a></li>
+</ul>
+<h2 id="checkout-a-remote-branch-as-a-new-local-branch">Checkout a remote branch as a new local branch</h2>
+<p>When you <a href="../create-branch/#via-github">create a remote branch via Github</a> and <a href="../fetch_branches/">fetch</a> it down to your local repository you need you now need to check it out as a local branch in order to work within that branch.</p>
 <ol>
 <li>
-<p>Our GitHub Enterprise account only allows cloning using the SSH url. So inorder to clone any repository you will need to setup an SSH key pair trust between GitHub and your local machine. You can follow the instructions here to <a href="../../generate-ssh-key/">generate an ssh key pair</a></p>
+<p>In IntelliJ go to <strong>VCS</strong> -&gt; <strong>Git</strong> -&gt; <strong>Branches...</strong></p>
+<p><a href="../../images/branch_menu.png"><img alt="branches menu" src="../../images/branch_menu.png" /></a></p>
 </li>
 <li>
-<p>On the repository main page click the "Clone or download" button and be sure to change it to "Use SSH" instead of "Use HTTPS" and copy the displayed git SSH URL to your clipboar.</p>
-<p><a href="../../images/clone_repo.png"><img alt="clone or download" src="../../images/clone_repo.png" /></a></p>
+<p>In the Git Branches submenu under <strong>Remote Branches</strong> click on the branch you want which will show a submenu for the branch and click on <strong>Checkout as new local branch</strong></p>
+<p><a href="../../images/checkout_remote_branch.png"><img alt="git branches submenu" src="../../images/checkout_remote_branch.png" /></a></p>
 </li>
 <li>
-<p>Open IntelliJ and select "Check out from Version Control" and select "Git" from the drop down menu</p>
-<p><a href="../../images/checkout_from_version_control.png"><img alt="check out from version control" src="../../images/checkout_from_version_control.png" /></a></p>
+<p>Give a name to the checkout of the remote branch or leave the already populated name.</p>
+<p><a href="../../images/name_checkout_remote_branch.png"><img alt="name checkout of remote branch" src="../../images/name_checkout_remote_branch.png" /></a></p>
 </li>
 <li>
-<p>Fill out the "Clone Repository" popup screen. The SSH URL you copied to your clipboard goes in the Git Repository URL field. Select the directory you wish to have all your repository projects under, or accept the default. Also give the cloned repository a "Directory Name" or accept the default. You can click the "Test" button to test the connection. When your ready click "Clone" and go through any other prompts.</p>
-<p><a href="../../images/checkout_from_version_control_2.png"><img alt="check from version control 2" src="../../images/checkout_from_version_control_2.png" /></a></p>
+<p>Git will take the remote branch and create a local branch and checkout your working tree to point to this new branch you can verify this in the bottom right hand corner.</p>
+<p><a href="../../images/verify_branch_checkout.png"><img alt="verify branch checkout" src="../../images/verify_branch_checkout.png" /></a></p>
 </li>
 </ol>
-<p>Now you have the repository cloned to your local machine in which you can make your changes or start developing your code. When you're ready to commit your changes or newly added code see  the <a href="../commit/">How To on Committing changes</a></p></div>
+<h2 id="switch-between-local-branches">Switch between local branches</h2>
+<p>When you have more than one local branch in order to work on changes contained within that branch you need to switch you working tree to that branch by performing a <strong>git checkout <em>branch_name</em> </strong> command. In IntelliJ its as simple as the following:</p>
+<ol>
+<li>
+<p>Go to <strong>VCS</strong> -&gt; <strong>Git</strong> -&gt; <strong>Branches...</strong></p>
+<p><a href="../../images/branch_menu.png"><img alt="branches menu" src="../../images/branch_menu.png" /></a></p>
+</li>
+<li>
+<p>In the Git Branches submenu under <strong>Local Branches</strong> click on the branch you want to switch to and in the context menu click on <strong>Checkout</strong></p>
+<p><a href="../../images/checkout_branch.png"><img alt="checkout local branch" src="../../images/checkout_branch.png" /></a></p>
+</li>
+</ol></div>
         </div>
 
         <footer class="col-md-12">
