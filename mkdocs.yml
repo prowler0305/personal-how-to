@@ -6,6 +6,8 @@ pages:
     - USCC Engineering Organization Access: uscc-organization.md
     - Generate SSH Key pair: generate-ssh-key.md
     - Version Control:
+      - Day to Day Git: version_control/daytoday.md
+      - Add a File to Git: version_control/add_file.md
       - Create a Repository: version_control/create-repo.md
       - Clone a Repository: version_control/clone-repo.md
       - Create Branches: version_control/create-branch.md

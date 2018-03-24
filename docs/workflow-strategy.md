@@ -7,4 +7,4 @@ With version control systems like Git it is important to understand how these so
 
 In summary the major difference is that a set of code that has different "releases" of the code deployed and supported at the same time or has multiple teams working on different parts at the same time usually benefits from the Git Flow model. While GitHub flow is a light weight version that is suited for code that is deployed on a Continuous Delivery schedule where the code contained in the master branch is always deployable.
 
-Check this [good overall summary](https://www.freshconsulting.com/git-development-workflows-git-flow-vs-github-flow/) of the differences between the two flows. 
+Check this [good overall summary](https://www.freshconsulting.com/git-development-workflows-git-flow-vs-github-flow/) of the differences between the two flows.
